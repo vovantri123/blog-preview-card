@@ -33,6 +33,7 @@
                 width: 384px;
                 background-color: hsl(0, 0%, 100%);
                 border-radius: 20px;
+                box-shadow: 8px 8px 0px 0px;
             }
 
             .blog-img {
@@ -57,38 +58,79 @@
             .category {
                 padding: 4px 12px;
                 border-radius: 4px;
-                display: inline-block; 
+                display: inline-block;
                 background-color: hsl(47, 88%, 63%);
                 font-size: 14px;
                 font-weight: bold;
-
             }
 
-            .publish-date{
-              font-size: 14px;
-              margin-top: 20px;
+            .publish-date {
+                font-size: 14px;
+                margin-top: 16px;
             }
 
-            .title{
-              font-size: 24px;
-              font-weight: bold;
-              margin-top: 20px;
+            .title {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 16px;
             }
 
-            .description{
-              font-size: 16px;
-              color:  hsl(0, 0%, 42%);
-              margin-top: 20px;
+            .description {
+                font-size: 16px;
+                color: hsl(0, 0%, 42%);
+                margin-top: 16px;
+                line-height: 1.5;
             }
 
-            .blog-author{
-              margin-top: 24.833px;
+            .blog-author {
+                margin-top: 24.833px;
             }
-            
-            .author-name{
-              font-size: 14px;
-              font-weight: bold;
-              margin-left: 10px;
+
+            .author-name {
+                font-size: 14px;
+                font-weight: bold;
+                margin-left: 10px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                .blog-card {
+                    height: 501px;
+                    width: 327px;
+                }
+
+                .blog-img {
+                    width: 279px;
+                    height: 200px;
+                    margin: 24px auto;
+                    object-fit: cover;
+                }
+
+                .blog-content {
+                    width: 279px;
+                }
+
+                .category {
+                    font-size: 12px;
+                }
+
+                .publish-date {
+                    font-size: 12px;
+                }
+
+                .title {
+                    font-size: 20px;
+                }
+
+                .description {
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+
+                .author-name {
+                    font-size: 12px;
+                    font-weight: bold;
+                    margin-left: 10px;
+                }
             }
         </style>
     </head>
