@@ -1,86 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <title>Frontend Mentor | Blog preview card</title>
-    <style>
-      @font-face {
-        font-family: "Figtree";
-        src: url("../Bai1_Getting_started_on_Frontend_Mentor/blog-preview-card/assets/fonts/Figtree-VariableFont_wght.ttf")
-          format("truetype");
-        font-weight: 100 900;
-        font-style: normal;
-      }
-    </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      // Chỉ có tác dụng khi dùng CDN
-      tailwind.config = {
-        theme: {
-          fontFamily: {
-            sans: ["Figtree", "sans-serif"],
-          },
-        },
-      };
-    </script>
-  </head>
-  <body class="font-sans text-[hsl(0,0%,7%)]">
-    <div
-      class="blog-container flex h-screen items-center justify-center bg-[hsl(47,88%,63%)]"
-    >
-      <div
-        class="blog-card flex w-[327px] flex-col items-center overflow-hidden rounded-3xl border border-black bg-[hsl(0,0%,100%)] md:w-[392px]"
-        style="box-shadow: 8px 8px 0px 0px"
-      >
-        <div class="w-full p-6">
-          <img
-            class="blog-img rounded-xl"
-            src="../Bai1_Getting_started_on_Frontend_Mentor/blog-preview-card/assets/images/illustration-article.svg"
-            alt="blog image"
-          />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+        <title>Frontend Mentor | Blog preview card</title>
+        <style>
+            @font-face {
+                font-family: "Figtree";
+                src: url("../Bai1_Getting_started_on_Frontend_Mentor/blog-preview-card/assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+                font-weight: 100 900;
+                font-style: normal;
+            }
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            // Chỉ có tác dụng khi dùng CDN
+            tailwind.config = {
+                theme: {
+                    fontFamily: {
+                        sans: ["Figtree", "sans-serif"],
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="font-sans text-[hsl(0,0%,7%)]">
+        <div class="blog-container flex h-screen items-center justify-center bg-[hsl(47,88%,63%)]">
+            <div class="blog-card flex w-[327px] flex-col items-center overflow-hidden rounded-3xl border border-black bg-[hsl(0,0%,100%)] md:w-[392px]" style="box-shadow: 8px 8px 0px 0px">
+                <div class="w-full p-6">
+                    <img class="blog-img rounded-xl w-full" src="./assets/images/illustration-article.svg" alt="blog image" />
+                </div>
+                <div class="blog-content w-full px-6">
+                    <div class="category inline-block rounded bg-[hsl(47,88%,63%)] px-3 py-2 text-xs font-extrabold md:text-[16px]">Learning</div>
+                    <div class="publish-date mt-4 text-xs font-medium md:text-[14px]">Published 21 Dec 2023</div>
+                    <div class="title mt-4 text-[20px] font-extrabold md:text-2xl">HTML & CSS foundations</div>
+                    <div class="description mt-4 text-[14px] leading-relaxed font-light md:text-[16px]">These languages are the backbone of every website, defining structure, content, and presentation.</div>
+                </div>
+                <div class="blog-author flex w-full items-center p-6">
+                    <img class="user-img" src="./assets/images/image-avatar.webp" alt="user image" width="32px" />
+                    <div class="author-name ml-3 text-[14px] font-extrabold md:text-[16px]">Greg Hooper</div>
+                </div>
+            </div>
         </div>
-        <div class="blog-content w-full px-6">
-          <div
-            class="category inline-block rounded bg-[hsl(47,88%,63%)] px-3 py-2 text-xs font-extrabold md:text-[16px]"
-          >
-            Learning
-          </div>
-          <div class="publish-date mt-4 text-xs font-medium md:text-[14px]">
-            Published 21 Dec 2023
-          </div>
-          <div class="title mt-4 text-[20px] font-extrabold md:text-2xl">
-            HTML & CSS foundations
-          </div>
-          <div
-            class="description mt-4 text-[14px] leading-relaxed font-light md:text-[16px]"
-          >
-            These languages are the backbone of every website, defining
-            structure, content, and presentation.
-          </div>
-        </div>
-        <div class="blog-author flex w-full items-center p-6">
-          <img
-            class="user-img"
-            src="../Bai1_Getting_started_on_Frontend_Mentor/blog-preview-card/assets/images/image-avatar.webp"
-            alt="user image"
-            width="32px"
-          />
-          <div
-            class="author-name ml-3 text-[14px] font-extrabold md:text-[16px]"
-          >
-            Greg Hooper
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
