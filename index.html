@@ -38,40 +38,45 @@
       class="blog-container flex h-screen items-center justify-center bg-[hsl(47,88%,63%)]"
     >
       <div
-        class="blog-card flex w-[327px] flex-col items-center overflow-hidden rounded-3xl border border-black bg-[hsl(0,0%,100%)]"
+        class="blog-card flex w-[327px] flex-col items-center overflow-hidden rounded-3xl border border-black bg-[hsl(0,0%,100%)] md:w-[392px]"
         style="box-shadow: 8px 8px 0px 0px"
       >
-        <img
-          class="blog-img mt-6 rounded-xl"
-          src="./assets/images/illustration-article.svg"
-          width="280px"
-          alt="blog image"
-        />
-        <div class="blog-content mx-6 mt-6">
+        <div class="w-full p-6">
+          <img
+            class="blog-img rounded-xl"
+            src="../Bai1_Getting_started_on_Frontend_Mentor/blog-preview-card/assets/images/illustration-article.svg"
+            alt="blog image"
+          />
+        </div>
+        <div class="blog-content w-full px-6">
           <div
-            class="category inline-block rounded-xl bg-[hsl(47,88%,63%)] px-3 py-1 text-xs font-extrabold"
+            class="category inline-block rounded bg-[hsl(47,88%,63%)] px-3 py-2 text-xs font-extrabold md:text-[16px]"
           >
             Learning
           </div>
-          <div class="publish-date mt-4 text-xs font-medium">
+          <div class="publish-date mt-4 text-xs font-medium md:text-[14px]">
             Published 21 Dec 2023
           </div>
-          <div class="title mt-4 text-[20px] font-extrabold">
+          <div class="title mt-4 text-[20px] font-extrabold md:text-2xl">
             HTML & CSS foundations
           </div>
-          <div class="description mt-4 text-[14px] leading-relaxed font-light">
+          <div
+            class="description mt-4 text-[14px] leading-relaxed font-light md:text-[16px]"
+          >
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </div>
         </div>
-        <div class="blog-author m-6 flex w-[280px] items-center">
+        <div class="blog-author flex w-full items-center p-6">
           <img
             class="user-img"
-            src="./assets/images/image-avatar.webp"
+            src="../Bai1_Getting_started_on_Frontend_Mentor/blog-preview-card/assets/images/image-avatar.webp"
             alt="user image"
             width="32px"
           />
-          <div class="author-name ml-3 text-[14px] font-extrabold">
+          <div
+            class="author-name ml-3 text-[14px] font-extrabold md:text-[16px]"
+          >
             Greg Hooper
           </div>
         </div>
